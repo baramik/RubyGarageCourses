@@ -1,4 +1,3 @@
-
 #Describe the mail sorting (city, street, house, apartment, destination, value). Write a program that determines:
 
 #  the number of parcels sent to some city
