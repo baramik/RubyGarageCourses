@@ -14,13 +14,6 @@ module RandomGenerator
       end 
 end   
 
-module Comparator
-  private
-  def compare(string1, string2)
-
-  end
-end
-
 class Game
   include RandomGenerator
   include Validator
@@ -32,6 +25,21 @@ class Game
   def new_game
     puts @string << random
      valid?(@string)
+  end
+  def compare(string1, string2)
+    compare_array = []
+
+    result = string1==string2 ? true : false
+
+    if result
+        string_size = "#{string1}".size
+     	string_size.times{compare_array.push("+")}
+     	compare_array
+     else
+     	puts "Fuck off"
+     end
+     
+      #string1==string2 ? true : false
   end
 end  
 
